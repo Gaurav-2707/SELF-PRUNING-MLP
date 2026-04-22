@@ -14,19 +14,15 @@ To encourage sparsity, an **L1 penalty** is applied to the gate values during tr
 
 ## 2. Why L1 Penalty on Sigmoid Gates Encourages Sparsity
 
-Each weight \( w \) is modulated by a gate:
+Each weight $w$ is modulated by a gate:
 
-\[
-\tilde{w} = w \cdot \sigma(g)
-\]
+$\tilde{w} = w \cdot \sigma(g)$
 
-where \( \sigma(g) \in (0,1) \).
+where $\sigma(g) \in (0,1)$.
 
 We add an L1 penalty:
 
-\[
-\mathcal{L}_{sparsity} = \lambda \sum |\sigma(g)|
-\]
+$\mathcal{L}_{sparsity} = \lambda \sum |\sigma(g)|$
 
 ### Key intuition:
 
