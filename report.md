@@ -34,9 +34,7 @@ $\mathcal{L}_{sparsity} = \lambda \sum |\sigma(g)|$
 ### Result:
 - The network naturally becomes **sparse**
 - Unimportant connections are effectively removed:
-  \[
-  w \cdot \sigma(g) \approx 0
-  \]
+  $w \cdot \sigma(g) \approx 0$
 
 This creates a **soft pruning mechanism** that is fully differentiable.
 
